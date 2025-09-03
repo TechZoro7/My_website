@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Website</title>
+    <meta name="description" content="A clean, fast, responsive website." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="#">MySite</a>
+        <nav class="nav">
+          <a href="#features">Features</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+          <a class="btn" href="#cta">Get Started</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="cta" role="banner" aria-label="Hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>Clean. Fast. Responsive.</h1>
+            <p>Drop your content here (copied from your CodeSandbox) and ship a polished static site.</p>
+            <div class="hero-actions">
+              <a class="btn" href="#features">See Features</a>
+              <a class="btn btn-secondary" href="#contact">Contact</a>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="blob"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container">
+          <h2>Features</h2>
+          <div class="grid">
+            <article class="card">
+              <h3>Lightweight</h3>
+              <p>No framework required. Pure HTML/CSS/JS.</p>
+            </article>
+            <article class="card">
+              <h3>Accessible</h3>
+              <p>Semantic HTML, high-contrast defaults, keyboard-friendly.</p>
+            </article>
+            <article class="card">
+              <h3>Deploy Anywhere</h3>
+              <p>GitHub Pages, Netlify, Vercel—no config needed.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section alt">
+        <div class="container">
+          <h2>Gallery</h2>
+          <div class="grid gallery">
+            <img src="assets/placeholder-1.svg" alt="Placeholder 1" />
+            <img src="assets/placeholder-2.svg" alt="Placeholder 2" />
+            <img src="assets/placeholder-3.svg" alt="Placeholder 3" />
+            <img src="assets/placeholder-4.svg" alt="Placeholder 4" />
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h2>Contact</h2>
+          <form class="contact-form" name="contact" method="post" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact" />
+            <label> Name
+              <input type="text" name="name" required />
+            </label>
+            <label> Email
+              <input type="email" name="email" required />
+            </label>
+            <label> Message
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+            <button class="btn" type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> MySite. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
